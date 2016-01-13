@@ -5,7 +5,7 @@
 }
 
 .board-b72b1 {
-    border: 2px solid #404040;
+    border: 0px solid #404040;
     -moz-box-sizing: content-box;
     box-sizing: content-box
 }
@@ -22,12 +22,12 @@
 }
 
 .white-1e1d7 {
-    background-color: #f0d9b5;
+    background-color: white;
     color: #b58863
 }
 
 .black-3c85d {
-    background-color: #b58863;
+    background-color: #c0c0c0;
     color: #f0d9b5
 }
 
@@ -55,3 +55,17 @@
     left: 2px
 }
 
+/* The animation code */
+@keyframes example {
+    from {background-color: white}
+    to {background-color: #c0c0c0;}
+}
+
+/* The element to apply the animation to */
+div.black-3c85d {
+    width: 49px;
+    height: 49px;
+    background-color: #c0c0c0;
+    animation-name: example;
+    animation-duration: 6s;
+}
